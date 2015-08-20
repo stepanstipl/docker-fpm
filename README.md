@@ -8,7 +8,7 @@ There are two versions for CentOS 7:
 *Puppet 4 comes in so called AIO package with bundled ruby.*
 
 These containers are also available on Docker Hub as
-stepanstipl:fpm-centos7-system and stepanstipl:fpm-centos7-puppet4.
+`stepanstipl:fpm-centos7-system` and `stepanstipl:fpm-centos7-puppet4`.
 
 Usage:
 ------
