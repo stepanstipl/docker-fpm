@@ -11,6 +11,7 @@ RUN mkdir /output
 WORKDIR /output
 
 ENV RPM_PREFIX rubygem
+ENV DEPENDENCIES false
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]

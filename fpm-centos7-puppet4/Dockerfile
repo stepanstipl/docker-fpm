@@ -14,6 +14,7 @@ RUN mkdir /output
 WORKDIR /output
 
 ENV RPM_PREFIX puppetlabs-rubygem
+ENV DEPENDENCIES false
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]

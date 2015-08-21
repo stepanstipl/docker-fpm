@@ -11,5 +11,11 @@ Usage:
 
 Env variables:
 --------------
-- **RPM_PREFIX**
-  You can overwrite desired package prefix name using $RPM_PREFIX env variable: `docker run -v $(pwd):/output -e "RPM_PREFIX=my-rubygem" stepanstipl/fpm-centos7-system <gem-name>`. Defaults to `rubygem`.
+- **RPM_PREFIX** - You can overwrite desired package prefix name using
+  $RPM_PREFIX env variable: `docker run -v $(pwd):/output -e
+  "RPM_PREFIX=my-rubygem" stepanstipl/fpm-centos7-system <gem-name>`. Defaults
+  to `rubygem`.
+
+- **DEPENDENCIES** - If you want to package gem and all it's dependencies, set
+  this tp true, such as `docker run -v $(pwd):/output -e "DEPENDENCIES=true"
+  fpm-centos7-system <gem-name>`. Default to `false`.
