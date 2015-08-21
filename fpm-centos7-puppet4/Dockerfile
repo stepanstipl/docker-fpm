@@ -13,7 +13,7 @@ RUN gem install fpm
 RUN mkdir /output
 WORKDIR /output
 
-ENV RPM_PREFIX puppet-rubygem
+ENV RPM_PREFIX puppetlabs-rubygem
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]

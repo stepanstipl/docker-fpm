@@ -14,4 +14,4 @@ Usage:
 Env variables:
 --------------
 - **RPM_PREFIX**
-  You can overwrite desired package prefix name using $RPM_PREFIX env variable: `docker run -v $(pwd):/output -e "RPM_PREFIX=my-rubygem" stepanstipl:fpm-centos7-puppet4 <gem-name>`. Defaults to `puppet-rubygem`.
+  You can overwrite desired package prefix name using $RPM_PREFIX env variable: `docker run -v $(pwd):/output -e "RPM_PREFIX=my-rubygem" stepanstipl:fpm-centos7-puppet4 <gem-name>`. Defaults to `puppetlabs-rubygem`.
