@@ -3,13 +3,13 @@ https://github.com/jordansissel/fpm.
 
 This version is for ruby bundled with Puppet 4 on CentOS 7.
 *Puppet 4 comes with it's own independent version of Ruby, installed in
-/opt/puppetlabs* 
+/opt/puppetlabs.* 
 
-It is also available on Docker Hub as `stepanstipl:fpm-centos7-puppet4`.
+It is also available on Docker Hub as `stepanstipl/fpm-centos7-puppet4`.
 
 Usage:
 ------
-`docker run -v $(pwd):/output stepanstipl:fpm-centos7-puppet4 <gem-name>`
+`docker run -v $(pwd):/output stepanstipl/fpm-centos7-puppet4 <gem-name>`
 
 Env variables:
 --------------
