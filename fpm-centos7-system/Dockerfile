@@ -4,6 +4,7 @@ MAINTAINER Stepan Stipl
 
 RUN yum groupinstall 'Development Tools' -y
 RUN yum install ruby-devel -y
+RUN yum install zlib-devel -y
 
 RUN gem install fpm
 
