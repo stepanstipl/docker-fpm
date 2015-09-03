@@ -7,7 +7,7 @@ It is also available on Docker Hub as `stepanstipl/fpm-centos7-gem-system`.
 
 Usage:
 ------
-`docker run -v $(pwd):/output stepanstipl/fpm-centos7-gem-system <gem-name>`
+`docker run --rm -v $(pwd):/output stepanstipl/fpm-centos7-gem-system <gem-name>`
 
 Env variables:
 --------------
@@ -15,5 +15,5 @@ Env variables:
   to `rubygem`.
 
 - `DEPENDENCIES` - If you want to package gem and all it's dependencies, set
-  this tp true, such as `docker run -v $(pwd):/output -e "DEPENDENCIES=true"
+  this tp true, such as `docker run --rm -v $(pwd):/output -e "DEPENDENCIES=true"
   fpm-centos7-system <gem-name>`. Defaults to `false`.

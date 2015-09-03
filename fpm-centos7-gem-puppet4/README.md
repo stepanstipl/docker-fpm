@@ -10,7 +10,7 @@ It is also available on Docker Hub as `stepanstipl/fpm-centos7-gem-puppet4`.
 Usage:
 ------ 
 
-`docker run -v $(pwd):/output stepanstipl/fpm-centos7-gem-puppet4
+`docker run --rm -v $(pwd):/output stepanstipl/fpm-centos7-gem-puppet4
 <gem-name>`
 
 
@@ -21,5 +21,5 @@ Env variables:
   to `puppetlabs-rubygem`.
 
 - `DEPENDENCIES` - If you want to package gem and all it's dependencies, set
-  this to true, such as `docker run -v $(pwd):/output -e "DEPENDENCIES=true"
+  this to true, such as `docker run --rm -v $(pwd):/output -e "DEPENDENCIES=true"
   fpm-centos7-gem-puppet4 <gem-name>`. Defaults to `false`.
